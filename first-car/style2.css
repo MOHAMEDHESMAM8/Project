@@ -1,0 +1,2123 @@
+body {
+  background-color: #1f1d1d;
+  margin: 0 auto;
+  max-width: 1440px;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    max-width: none;
+  }
+}
+
+.navegation-bar {
+  padding: 5px;
+}
+
+.navegation-bar .container {
+  position: relative;
+}
+
+.navegation-bar .container img {
+  width: 130px;
+  height: 50px;
+}
+
+.navegation-bar .container ul {
+  list-style: none;
+  position: absolute;
+  left: 60%;
+  top: -10px;
+}
+
+.navegation-bar .container ul li {
+  float: left;
+  width: 130px;
+  height: 40px;
+  margin-left: 5px;
+  background-color: #1169db;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.navegation-bar .container ul li:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  margin: 0px 10px 10PX 10PX;
+}
+
+@media screen and (max-width: 1150px) {
+  .navegation-bar .container ul {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navegation-bar .container ul li {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navegation-bar .container ul li {
+    width: 70px;
+    left: 0px;
+    font-size: 10px;
+  }
+  .navegation-bar .container img {
+    width: 90px;
+    height: 40px;
+  }
+}
+
+.cycle-slideshow {
+  position: relative;
+  left: 300px;
+  width: 55%;
+  height: 500px;
+}
+
+.cycle-slideshow .cycle-pager {
+  position: relative;
+  z-index: 999;
+  top: -20px;
+  left: 350px;
+  cursor: pointer;
+  opacity: 0px;
+  visibility: hidden;
+}
+
+.cycle-slideshow .cycle-pager .cycle-pager-active {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0px 5px;
+  padding: 0px 5px;
+  border-radius: 100%;
+}
+
+.cycle-slideshow:hover .cycle-pager {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cycle-slideshow:hover .cycle-prev {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cycle-slideshow:hover .cycle-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cycle-slideshow .cycle-prev, .cycle-slideshow .cycle-next {
+  position: absolute;
+  top: 200px;
+  z-index: 9999;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  padding-top: 8px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.cycle-slideshow .cycle-next {
+  right: 0px;
+}
+
+.cycle-slideshow .cycle-prev {
+  left: 0;
+}
+
+.cycle-slideshow img {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 1150px) {
+  .cycle-slideshow {
+    left: 50px;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cycle-slideshow {
+    left: 0px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cars-section {
+  width: 90%;
+  height: 1800px;
+  position: relative;
+  left: 60px;
+  overflow: hidden;
+}
+
+.cars-section h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #006cfa;
+  position: absolute;
+  top: 25px;
+  left: 40%;
+}
+
+.cars-section h1:hover {
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+
+.cars-section .row-1 {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.cars-section .row-1 .car-1-1 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.cars-section .row-1 .car-1-1:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-1 .car-1-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-1 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-1 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-1 .car-1-1 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-1 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-1 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-1 .car-1-1 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-1 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-1 .car-1-1 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-1 .car-1-1 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-1 .car-1-1 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-1 .car-1-1 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-1 .car-1-1 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-1 .car-1-1 {
+    width: 50%;
+    left: 0px;
+  }
+}
+
+.cars-section .row-1 .car-1-2 {
+  position: absolute;
+  width: 34%;
+  height: 400px;
+  position: absolute;
+  left: 427.5px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-1 .car-1-2 {
+    width: 36%;
+  }
+}
+
+.cars-section .row-1 .car-1-2:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-1 .car-1-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-2 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-2 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-1 .car-1-2 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-2 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-2 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-1 .car-1-2 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-2 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-1 .car-1-2 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-1 .car-1-2 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-1 .car-1-2 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-1 .car-1-2 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-1 .car-1-2 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-1 .car-1-2 {
+    width: 50%;
+    left: 50%;
+  }
+}
+
+.cars-section .row-1 .car-1-3 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.cars-section .row-1 .car-1-3:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-1 .car-1-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-3 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-3 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-1 .car-1-3 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-1 .car-1-3 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-3 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-1 .car-1-3 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-1 .car-1-3 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-1 .car-1-3 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-1 .car-1-3 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-1 .car-1-3 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-1 .car-1-3 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-1 .car-1-3 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-1 .car-1-3 {
+    width: 50%;
+    left: 0px;
+    top: 400px;
+  }
+}
+
+.cars-section .row-2 {
+  width: 100%;
+  position: relative;
+  top: 500px;
+}
+
+.cars-section .row-2 .car-2-1 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.cars-section .row-2 .car-2-1:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-2 .car-2-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-1 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-1 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-2 .car-2-1 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-1 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-1 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-2 .car-2-1 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-1 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-2 .car-2-1 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-2 .car-2-1 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-2 .car-2-1 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-2 .car-2-1 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-2 .car-2-1 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-2 .car-2-1 {
+    width: 50%;
+    left: 50%;
+  }
+}
+
+.cars-section .row-2 .car-2-2 {
+  position: absolute;
+  width: 34%;
+  height: 400px;
+  position: absolute;
+  left: 427.5px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-2 .car-2-2 {
+    width: 36%;
+  }
+}
+
+.cars-section .row-2 .car-2-2:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-2 .car-2-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-2 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-2 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-2 .car-2-2 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-2 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-2 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-2 .car-2-2 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-2 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-2 .car-2-2 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-2 .car-2-2 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-2 .car-2-2 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-2 .car-2-2 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-2 .car-2-2 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-2 .car-2-2 {
+    width: 50%;
+    left: 50%;
+    top: 400px;
+  }
+}
+
+.cars-section .row-2 .car-2-3 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.cars-section .row-2 .car-2-3:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-2 .car-2-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-3 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-3 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-2 .car-2-3 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-2 .car-2-3 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-3 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-2 .car-2-3 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-2 .car-2-3 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-2 .car-2-3 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-2 .car-2-3 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-2 .car-2-3 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-2 .car-2-3 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-2 .car-2-3 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-2 .car-2-3 {
+    width: 50%;
+    left: 0;
+    top: 400px;
+  }
+}
+
+.cars-section .row-3 {
+  width: 100%;
+  position: relative;
+  top: 900px;
+}
+
+.cars-section .row-3 .car-3-1 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.cars-section .row-3 .car-3-1:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-3 .car-3-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-1 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-1 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-3 .car-3-1 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-1 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-1 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-3 .car-3-1 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-1 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-3 .car-3-1 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-3 .car-3-1 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-3 .car-3-1 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-3 .car-3-1 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-3 .car-3-1 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-3 .car-3-1 {
+    width: 50%;
+    left: 0;
+    top: 400px;
+  }
+}
+
+.cars-section .row-3 .car-3-2 {
+  position: absolute;
+  width: 34%;
+  height: 400px;
+  position: absolute;
+  left: 427.5px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-3 .car-3-2 {
+    width: 36%;
+  }
+}
+
+.cars-section .row-3 .car-3-2:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-3 .car-3-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-2 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-2 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-3 .car-3-2 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-2 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-2 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-3 .car-3-2 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-2 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-3 .car-3-2 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-3 .car-3-2 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-3 .car-3-2 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-3 .car-3-2 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-3 .car-3-2 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-3 .car-3-2 {
+    width: 50%;
+    left: 50%;
+    top: 400px;
+  }
+}
+
+.cars-section .row-3 .car-3-3 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.cars-section .row-3 .car-3-3:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-3 .car-3-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-3 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-3 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-3 .car-3-3 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-3 .car-3-3 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-3 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-3 .car-3-3 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-3 .car-3-3 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-3 .car-3-3 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-3 .car-3-3 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-3 .car-3-3 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-3 .car-3-3 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-3 .car-3-3 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cars-section .row-3 .car-3-3 {
+    width: 50%;
+    left: 0;
+    top: 800px;
+  }
+}
+
+.cars-section .row-4 {
+  width: 100%;
+  position: relative;
+  top: 1300px;
+}
+
+.cars-section .row-4 .car-4-1 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.cars-section .row-4 .car-4-1:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-4 .car-4-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-1 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-1 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-4 .car-4-1 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-1 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-1 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-4 .car-4-1 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-1 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-4 .car-4-1 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-4 .car-4-1 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-4 .car-4-1 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-4 .car-4-1 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-4 .car-4-1 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cars-section .row-4 .car-4-1 {
+    width: 50%;
+    top: 400px;
+    left: 50%;
+  }
+}
+
+.cars-section .row-4 .car-4-2 {
+  position: absolute;
+  width: 34%;
+  height: 400px;
+  position: absolute;
+  left: 427.5px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-4 .car-4-2 {
+    width: 36%;
+  }
+}
+
+.cars-section .row-4 .car-4-2:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-4 .car-4-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-2 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-2 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-4 .car-4-2 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-2 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-2 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-4 .car-4-2 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-2 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-4 .car-4-2 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-4 .car-4-2 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-4 .car-4-2 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-4 .car-4-2 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-4 .car-4-2 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cars-section .row-4 .car-4-2 {
+    width: 50%;
+    top: 800px;
+    left: 0;
+  }
+}
+
+.cars-section .row-4 .car-4-3 {
+  width: 33%;
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.cars-section .row-4 .car-4-3:hover .text-container {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+}
+
+.cars-section .row-4 .car-4-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-3 .text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-3 .text-container h2 {
+  text-transform: uppercase;
+}
+
+.cars-section .row-4 .car-4-3 .text-container .text {
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+}
+
+.cars-section .row-4 .car-4-3 .text-container .button2 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-3 .text-container .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.cars-section .row-4 .car-4-3 .text-container .button1 {
+  width: 120px;
+  height: 30px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 50px;
+  margin-top: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cars-section .row-4 .car-4-3 .text-container .button1:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section .row-4 .car-4-3 .text-container {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .cars-section .row-4 .car-4-3 .text-container {
+    height: 80px;
+  }
+  .cars-section .row-4 .car-4-3 .text-container .button2 {
+    left: 60px;
+  }
+  .cars-section .row-4 .car-4-3 .text-container .button1 {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cars-section .row-4 .car-4-3 .text-container .text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cars-section .row-4 .car-4-3 {
+    width: 50%;
+    top: 800px;
+    left: 50%;
+  }
+}
+
+.cars-section .hidden {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size: 25px;
+  height: 60px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(bottom, black, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cars-section .cars-section:target {
+  height: 1700px;
+}
+
+.cars-section .cars-section:target .hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .cars-section h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .cars-section {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .cars-section {
+    height: 2500px;
+  }
+}
+
+.contact {
+  background-color: #1a1919;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.contact .colum {
+  width: 19%;
+  float: left;
+  position: relative;
+  left: 60px;
+}
+
+.contact .colum h2:hover {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.contact .colum ul {
+  list-style: none;
+  position: absolute;
+  left: -20px;
+}
+
+.contact .colum ul li:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .contact {
+    height: 600px;
+  }
+  .contact .colum {
+    left: 0px;
+  }
+}
+
+.buy-popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buy-popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buy-popup .contener {
+  background-color: #1f1d1d;
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  position: relative;
+  top: 50px;
+  left: 350px;
+  color: #1d7af3;
+  overflow: hidden;
+}
+
+.buy-popup .contener .popup-close {
+  text-decoration: none;
+  color: black;
+}
+
+.buy-popup .contener .popup-close:link, .buy-popup .contener .popup-close:visited {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.buy-popup .contener h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.buy-popup .contener p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.buy-popup .contener label {
+  position: relative;
+  left: 190px;
+}
+
+.buy-popup .contener input {
+  position: relative;
+  left: 210px;
+  border: none;
+  border-bottom: 2px solid #4f97f5;
+  margin-bottom: 50px;
+}
+
+.buy-popup .contener #bk {
+  margin-left: 37px;
+}
+
+.buy-popup .contener #bm {
+  margin-left: 76px;
+}
+
+.buy-popup .contener .button2 {
+  width: 150px;
+  height: 45px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  position: absolute;
+  left: 300px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.buy-popup .contener .button2:hover {
+  background-color: #006cfa;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+@media screen and (max-width: 1200px) {
+  .buy-popup .contener {
+    width: 80%;
+    height: 800px;
+    top: 50px;
+    left: 100px;
+  }
+}
+
+.about-popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.about-popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-popup .contener {
+  background-color: #1f1d1d;
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  overflow: hidden;
+}
+
+.about-popup .contener .popup-close {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.about-popup .contener .popup-close:link, .about-popup .contener .popup-close:visited {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.about-popup .contener .img-1 {
+  width: 30%;
+  height: 50%;
+  float: left;
+}
+
+.about-popup .contener .img-2 {
+  width: 30%;
+  height: 50%;
+}
+
+.about-popup .contener .text-contener {
+  width: 69%;
+  float: right;
+  height: 50%;
+  position: relative;
+  top: 15%;
+}
+
+.about-popup .contener .text-contener h1, .about-popup .contener .text-contener h2 {
+  color: #1d7af3;
+}
+
+.about-popup .contener .text-contener p {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-column-rule: 1px solid rgba(0, 0, 0, 0.2);
+          column-rule: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  color: #1d7af3;
+}
+
+.about-popup .contener .text-contener .button {
+  width: 150px;
+  height: 50px;
+  background-color: #4f97f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-popup .contener {
+    width: 80%;
+    height: 800px;
+    top: 50px;
+  }
+  .about-popup .contener .text-contener {
+    float: none;
+    width: 98%;
+    right: 0;
+    top: 0px;
+    height: 50%;
+    left: 10px;
+  }
+  .about-popup .contener .text-contener.button {
+    top: 100px;
+    z-index: 1;
+    margin-top: 5px;
+  }
+  .about-popup .contener .img-2 {
+    float: none;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 50%;
+    bottom: 0;
+  }
+  .about-popup .contener .img-1 {
+    width: 50%;
+    bottom: 0;
+    float: none;
+    position: absolute;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
